@@ -1,0 +1,22 @@
+[package]
+name = "scopino"
+version = "0.0.1"
+authors = [
+  "Damien Carol <damien.carol@gmail.com>",
+]
+description = "UI for scopino protocol"
+#edition = "2021"
+#rust-version = "1.60"
+license = "GPL"
+readme = "README.md"
+homepage = "https://github.com/not-fl3/egui-miniquad"
+repository = "https://github.com/not-fl3/egui-miniquad"
+categories = ["gui", "game-development"]
+keywords = ["gui", "imgui", "immediate", "portable", "gamedev"]
+include = ["LICENSE", "**/*.rs", "Cargo.toml"]
+
+[dependencies]
+bytemuck = "1.9"
+egui = { version = "0.22.0", features = ["bytemuck"] }
+miniquad = { version = "0.3.12" }
+quad-url = "0.1"
